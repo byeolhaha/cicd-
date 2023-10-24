@@ -11,7 +11,7 @@ class ReportTest {
     @DisplayName("!!필수로 들어가야 하는 게시글 id가 들어가지 않은 경우 예외를 던진다. 롤루")
     public void createReport_nullPostId_throwIllegalArgumentException() {
         //given
-        Long postId = 1L;
+        Long postId = null;
         Long reporterId = 2L;
         String contents = "This is a report.";
         ReportItem item = ReportItem.FAKED_SALE;
