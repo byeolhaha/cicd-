@@ -9,6 +9,12 @@ on:
   workflow_dispatch:
 
 # 워크플로우 내에서의 작업 정의
+env:
+  BUCKET_NAME: byeol-cicd-bucket
+  PROJECT_NAME: cicd-bucket
+  DEPLOYMENT_GROUP_NAME: cicd
+  CODE_DEPLOY_APP_NAME: cicd
+
 jobs:
   # 작업의 이름
   build_and_test:
